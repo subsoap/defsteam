@@ -1,0 +1,33 @@
+[project]
+title = DefSteam
+version = 1.0.0
+dependencies = https://github.com/andsve/dirtylarry/archive/master.zip
+
+[bootstrap]
+main_collection = /example/example.collectionc
+
+[input]
+game_binding = /input/game.input_bindingc
+
+[display]
+width = 1024
+height = 768
+
+[physics]
+scale = 0.02
+
+[script]
+shared_state = 1
+
+[library]
+include_dirs = defsteam
+
+[android]
+package = com.subsoap.defsteam
+
+[ios]
+bundle_identifier = com.subsoap.defsteam
+
+[osx]
+bundle_identifier = com.subsoap.defsteam
+

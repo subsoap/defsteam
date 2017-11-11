@@ -1,0 +1,46 @@
+--[[
+defsteam.open_steam(appid)
+defsteam.read_steam()
+defsteam.get_steam_stat()
+defsteam.set_steam_stat()
+defsteam.get_steam_achievement()
+defsteam.store_steam_stats()
+defsteam.find_number_of_current_players()
+defsteam.find_or_create_leaderboard()
+defsteam.find_leaderboard()
+defsteam.upload_leaderboard_score()
+defsteam.download_leaderboard_entries()
+
+
+
+--]]
+
+
+function init(self)
+	defsteam.start_steam()
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	-- Add update code here
+	-- Remove this function if not needed
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end
