@@ -50,7 +50,9 @@ Then run init with your game's appid. For example, with Spacewar's appid of 480 
 defsteam.init(480)
 ```
 
-Most of the Steamworks API should be avialable to you. You can read the Steamworks documentation for features.
+Most of the Steamworks API should be available to you. You can read the Steamworks documentation for features.
+
+https://partner.steamgames.com/doc/sdk/api
 
 For achievements you would for example use.
 

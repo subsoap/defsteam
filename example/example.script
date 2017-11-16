@@ -1,23 +1,7 @@
---[[
-defsteam.open_steam(appid)
-defsteam.read_steam()
-defsteam.get_steam_stat()
-defsteam.set_steam_stat()
-defsteam.get_steam_achievement()
-defsteam.store_steam_stats()
-defsteam.find_number_of_current_players()
-defsteam.find_or_create_leaderboard()
-defsteam.find_leaderboard()
-defsteam.upload_leaderboard_score()
-defsteam.download_leaderboard_entries()
-
-
-
---]]
-
+local defsteam = require("defsteam.defsteam")
 
 function init(self)
-	defsteam.start_steam()
+	defsteam.init(480)
 end
 
 function final(self)
