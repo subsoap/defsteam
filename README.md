@@ -22,6 +22,10 @@ Create target folders within the "res" folder for each platform you wish to rele
 
 Next copy and paste the redistributable files into the root of your project next to the game.project file. This is so that you can test your game using "Project -> Build"
 
+Next add this project as a [Defold library dependency](http://www.defold.com/manuals/libraries/). Open your game.project file and in the dependencies field under project add:
+
+	https://github.com/subsoap/defsteam/archive/master.zip
+
 # Bundling
 
 With the steps for installation correctly followed the appropriate redistributable files should be included with your game when bundling.
@@ -34,7 +38,25 @@ To run the example you will need to go through the steps in the installation to 
 
 # Usage
 
+In your main script require DefSteam.
 
+```
+local defsteam = require("defsteam.defsteam")
+```
+
+Then run init with your game's appid. For example, with Spacewar's appid of 480 for testing.
+
+```
+defsteam.init(480)
+```
+
+Most of the Steamworks API should be avialable to you. You can read the Steamworks documentation for features.
+
+For achievements you would for example use.
+
+```
+defsteam.userstats.SetAchievement("ACH_WIN_ONE_GAME")
+```
 
 # Information
 
