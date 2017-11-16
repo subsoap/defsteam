@@ -2,6 +2,7 @@
 title = DefSteam
 version = 1.0.0
 dependencies = https://github.com/andsve/dirtylarry/archive/master.zip
+bundle_resources = /res
 
 [bootstrap]
 main_collection = /example/example.collectionc
