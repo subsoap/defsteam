@@ -1,7 +1,8 @@
 local defsteam = require("defsteam.defsteam")
 
 function init(self)
-	defsteam.init(480)
+	defsteam.init()
+	msg.post(".", "acquire_input_focus")
 end
 
 function final(self)
@@ -15,13 +16,21 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	-- Add message-handling code here
-	-- Remove this function if not needed
+	
 end
 
 function on_input(self, action_id, action)
-	-- Add input-handling code here
-	-- Remove this function if not needed
+	if defsteam.active and action_id == hash("key_z") and action.released then
+		print("Attempting achievement unlocks...")
+		print(defsteam.userstats.SetAchievement("ACH_WIN_ONE_GAME"))
+		print(defsteam.userstats.SetAchievement("ACH_WIN_100_GAMES"))
+		print(defsteam.userstats.SetAchievement("ACH_TRAVEL_FAR_ACCUM"))
+		print(defsteam.userstats.SetAchievement("ACH_TRAVEL_FAR_SINGLE"))
+		print(defsteam.userstats.SetAchievement("NEW_ACHIEVEMENT_0_4"))
+		print("Number of achievements " .. tostring(defsteam.userstats.GetNumAchievements()))
+		print("Your SteamID " .. tostring(defsteam.user.GetSteamID()))
+		print("Your Steam Level " .. tostring(defsteam.user.GetPlayerSteamLevel()))
+	end
 end
 
 function on_reload(self)
