@@ -32,7 +32,7 @@ With the steps for installation correctly followed the appropriate redistributab
 
 # Example
 
-The example uses the Steam APPID of 480. This is the game Valve uses for testing Steamworks features, and a copy of it is included in the Steamworks SDK. You can view its achievement and stats metadata here: https://steamdb.info/app/480/stats/
+The example uses the Steam appid of 480. This is the game Valve uses for testing Steamworks features, and a copy of it is included in the Steamworks SDK. You can view its achievement and stats metadata here: https://steamdb.info/app/480/stats/
 
 To run the example you will need to go through the steps in the installation to add redistributable files to your project root and res folders as the required redistributable files are not included with DefSteam.
 
