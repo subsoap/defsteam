@@ -62,6 +62,6 @@ defsteam.userstats.SetAchievement("ACH_WIN_ONE_GAME")
 
 # Information
 
-DefSteam does not use native extensions and instead using ffi.
+DefSteam does not use native extensions and instead is using ffi.
 
 DefSteam uses a modified ffibuild generated steamworks.lua from the [Goluwa project](https://github.com/CapsAdmin/goluwa).
