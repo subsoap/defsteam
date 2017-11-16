@@ -26,6 +26,8 @@ Next add this project as a [Defold library dependency](http://www.defold.com/man
 
 	https://github.com/subsoap/defsteam/archive/master.zip
 
+Remember to do Project -> Fetch Libraries	
+	
 # Bundling
 
 With the steps for installation correctly followed the appropriate redistributable files should be included with your game when bundling.
