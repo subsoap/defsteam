@@ -40,4 +40,4 @@ To run the example you will need to go through the steps in the installation to 
 
 DefSteam does not use native extensions and instead using ffi.
 
-DefSteam uses a modified ffibuild generated steamworks.lua from the Goluwa project.
+DefSteam uses a modified ffibuild generated steamworks.lua from the [Goluwa project](https://github.com/CapsAdmin/goluwa).
