@@ -44,10 +44,10 @@ In your main script require DefSteam.
 local defsteam = require("defsteam.defsteam")
 ```
 
-Then run init with your game's appid. For example, with Spacewar's appid of 480 for testing.
+Then run init
 
 ```
-defsteam.init(480)
+defsteam.init()
 ```
 
 Most of the Steamworks API should be available to you. You can read the Steamworks documentation for features.
