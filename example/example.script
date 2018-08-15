@@ -6,8 +6,7 @@ function init(self)
 end
 
 function final(self)
-	-- Add finalization code here
-	-- Remove this function if not needed
+	defsteam.final()
 end
 
 function update(self, dt)

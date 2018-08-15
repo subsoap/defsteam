@@ -1,3 +1,5 @@
+local ffi = package.preload.ffi()
+
 local M = {}
 
 function M.init()
@@ -15,6 +17,11 @@ function M.init()
 		print("DefSteam: Steamworks couldn't be started. Is Steam running?")
 		M.active = false
 	end	
+end
+
+function M.final()
+	print("DefSteam: Steamworks Shutdown")
+	M.SteamAPI_Shutdown()
 end
 
 
