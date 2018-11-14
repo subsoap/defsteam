@@ -1,3 +1,12 @@
+# THIS IS NOW DEPRECIATED!! DO NOT USE!!
+
+Use this up to date extension instead:
+
+https://www.defold.com/community/projects/121594/
+
+https://github.com/britzl/steamworks-defold
+
+
 # DefSteam
 
 Steamworks support for Defold
